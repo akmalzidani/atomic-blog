@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { createRandomPost } from "./lib/fakerUtils";
 
 // 1. Create a context
-const PostContext = createContext();
+export const PostContext = createContext();
 
 function App() {
   const [posts, setPosts] = useState(() =>
@@ -50,8 +50,6 @@ function App() {
         onClearPosts: handleClearPosts,
         searchQuery,
         setSearchQuery,
-        isFakeDark,
-        setIsFakeDark,
       }}
     >
       <section>
@@ -63,8 +61,8 @@ function App() {
         </button>
 
         <Header />
-        <Main posts={searchedPosts} onAddPost={handleAddPost} />
-        <Archive onAddPost={handleAddPost} />
+        <Main />
+        <Archive />
         <Footer />
       </section>
     </PostContext.Provider>
