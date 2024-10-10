@@ -1,11 +1,10 @@
-import { useContext } from "react";
+import { usePosts } from "../hooks/PostContext";
 import Results from "./Results";
 import SearchPosts from "./SearchPosts";
-import { PostContext } from "../App";
 
 export default function Header() {
   // 3.Consuming Context Value
-  const { onClearPosts } = useContext(PostContext);
+  const { onClearPosts } = usePosts();
 
   return (
     <header>
