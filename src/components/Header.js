@@ -1,4 +1,4 @@
-import { usePosts } from "../hooks/PostContext";
+import { usePosts } from "../contexts/PostContext";
 import Results from "./Results";
 import SearchPosts from "./SearchPosts";
 

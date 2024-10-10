@@ -1,4 +1,4 @@
-import { usePosts } from "../hooks/PostContext";
+import { usePosts } from "../contexts/PostContext";
 
 export default function Results() {
   const { posts } = usePosts();

@@ -4,7 +4,7 @@ import Main from "./components/Main";
 import Archive from "./components/Archive";
 import Footer from "./components/Footer";
 import { createRandomPost } from "./lib/fakerUtils";
-import { PostProvider } from "./hooks/PostContext";
+import { PostProvider } from "./contexts/PostContext";
 
 // 1. Create a context
 
